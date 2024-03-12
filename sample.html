@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+
+.navbar-image{
+    height:65px ;
+    width: 35px;
+}
+.com-logo {
+  width: 60px;
+  height:60px;
+}
+#navItem1 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+#navItem2 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+#navItem3 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+#navItem4 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+.banner-section-bg-container {
+  background-image: url("https://img.freepik.com/free-photo/red-light-round-podium-black-background-mock-up_43614-950.jpg?t=st=1709737099~exp=1709740699~hmac=a71b7187afdf1cefa1f95163a654fca1c82d94ac801c33dbfa9bef0d38f57e58&w=740");
+  min-height: 100vh;
+  background-size: cover;
+  padding:50px ;
+  margin:10px ;
+  align-items: center;
+  text-align: center;
+}
+.banner-heading {
+  color: white;
+  font-family: "Roboto";
+  font-size: 45px;
+  font-weight: 300;
+}
+.banner-caption {
+  color: #f5f7fa;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 300;
+}
+.custom-button {
+  color: white;
+  background-color: #d0b200;
+  width: 130px;
+  height: 45px;
+  border-width: 0;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+.custom-outline-button {
+  color: #d0b200;
+  background-color: transparent;
+  width: 130px;
+  height: 45px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d0b200;
+  border-radius: 8px;
+}
+.container1{
+  background-image:linear-gradient(rgba(245, 247, 243, 0.941),rgba(250, 239, 239, 0.951),rgba(39, 38, 38, 0.958),rgba(207, 97, 176, 0.684)) ;
+  height:460px;
+  width: 250px;
+  border-width: 2px;
+  padding:10px ;
+  margin:40px ;
+  text-align:center;
+  box-shadow:8px ;
+  margin-right: 25px;
+}
+.container2{
+  background-image:linear-gradient(white,rgba(250, 239, 239, 0.951),rgba(39, 38, 38, 0.958),rgba(207, 97, 176, 0.684)) ;
+  height:460px;
+  width: 250px;
+  border-width: 2px;
+  padding:10px ;
+  margin:40px ;
+  text-align:center;
+  box-shadow: 8px;
+  margin-right: 25px;
+}
+.container3{
+  background-image:linear-gradient(white,rgba(250, 239, 239, 0.951),rgba(39, 38, 38, 0.958),rgba(207, 97, 176, 0.684)) ;
+  height:460px;
+  width: 250px;
+  border-width: 2px;
+  padding:10px ;
+  margin:40px ;
+  text-align:center;
+  box-shadow: 8px;
+  margin-right: 25px;
+}
+.container4{
+  background-image:linear-gradient(white,rgba(250, 239, 239, 0.951),rgba(39, 38, 38, 0.958),rgba(207, 97, 176, 0.684)) ;
+  height:460px;
+  width: 250px;
+  border-width: 2px;
+  padding:10px ;
+  margin:40px ;
+  text-align:center;
+  box-shadow:8px ;
+  margin-right: 25px;
+}
+.image1{
+  height:100px;
+  width:160px ;
+  border-radius:300px ;
+  margin-bottom: 5px;
+
+}
+.para{
+  color: rgb(246, 5, 98);
+  font-family:"caveat";
+  font-size:20px ;
+}
+.para1{
+  color: rgb(251, 4, 99);
+  font-family:"caveat";
+  font-weight: bold;
+
+}
+.btn{
+  background-color: rgb(251, 249, 249);
+  color: rgb(251, 6, 99);
+  border-width: 2px;
+  width: 126px;
+  height:40px ;
+  font-weight: bold;
+  font-size: 16px;
+  border-color: rgb(246, 13, 60);
+  
+}
+.amount{
+  font-weight: bold;
+  color: black;
+  padding: 8px;
+  font-size:35px ;
+}
+.price{
+  font-size:40px;
+}
+.price-toggler-container{
+  margin: 100px;
+  background-color: black;
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow: 10px;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  width: 340px;
+  text-align: center;
+  margin-left: 520px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}
+.tog-para{
+  font-weight: bold;
+  color: #f5f7fa;
+  font-size: 20px;
+}
+.price-toggler{
+  height: 40px;
+  width: 140px;
+  border-radius: 50px;
+  background: rgb(202, 35, 155);
+  position: relative;
+  cursor: pointer;
+  margin: 10px;
+
+}
+.price-toggler::before{
+  content:'';
+  position: absolute;
+  top: 5px; left:7px ;
+  border-radius: 50%;
+  background: white;
+  height: 30px;
+  width: 30px;
+  transition: .2s ease-out;
+}
+.price-toggler.active::before{
+  left:103px;
+}
+.bg-container{
+  align-items: center;
+}
+
+    </style>
+</head>
+<body>
+
+  <div class="bg-container">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://img.freepik.com/free-vector/gradient-logo-with-abstract-shape_23-2148219550.jpg?t=st=1709794676~exp=1709798276~hmac=4b18fb23c571521c81b35ff2fe8619a27b1d9dbf7871d4cd14c00966ec7c9662&w=740"
+          class="com-logo"
+        />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link active" id="navItem1" href="#">
+            Why Choose Us?
+            <span class="sr-only">(current)</span>
+          </a>
+          <a class="nav-link" href="#" id="navItem2">Explore Product</a>
+          <a class="nav-link" href="#" id="navItem3">Delivery & Payment</a>
+          <a class="nav-link" href="#" id="navItem4">Follow Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="col-12 col-md-6 col-xl-6">
+<div class="price-toggler-container">
+      <span class="tog-para">Monthly</span>
+      <div class="price-toggler" id="tog"></div>
+      <span class="tog-para">yearly</span>
+    </div>
+    </div>
+
+    <div class="banner-section-bg-container d-flex flex-row">
+
+    <div class="col-12 col-md-6 col-lg-3 col-xl-3 ">
+    <div class="container1">
+      <img src="https://img.freepik.com/free-vector/realistic-display-smartphone-with-different-apps_52683-30241.jpg?t=st=1709794194~exp=1709797794~hmac=d931ba8ac49938d850fd550ab5451fb547e3f793b880d10f1f28a6e90bd832c7&w=740" class="image1"/>
+      <p class="para1">Mobile</p>
+      <div class="amount">
+      <span class="currency">$</span>
+      <span class="price" id="numid">20</span>
+      <span class="duration" id="monid">/mo</span>
+      </div>
+      <p class="para">4GB RAM</p>
+      <p class="para">400nits peak brightness</p>
+      <p class="para">8MP Dual camera</p>
+      <p class="para">5MP Front camera</p>
+      <button class="btn">Buy</button>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+    <div class="container2">
+      <img src="https://img.freepik.com/free-photo/laptop-white-background-3d-rendering-computer-generated-image_1142-48567.jpg?t=st=1709794130~exp=1709797730~hmac=de34f3528caf9e0a927bcb67de1073b9d81d45d164cd5fa173fe97c6ed513ef0&w=740" class="image1"/>
+      <p class="para1">Laptop</p>
+      <div class="amount">
+      <span class="currency">$</span>
+      <span class="price" id="numid">60</span>
+      <span class="duration" id="monid">/mo</span>
+      </div>
+      <p class="para">4GB RAM</p>
+      <p class="para">Windows OS</p>
+      <p class="para">720p HD camera</p>
+      <p class="para">Premium Quality</p>
+      <button class="btn">Buy</button>
+    </div>
+  </div>
+
+   
+<div class="col-12 col-md-6 col-lg-3 col-xl-3">
+   <div class="container3">
+      <img src="https://img.freepik.com/premium-photo/professional-camera-white-background_488220-1465.jpg?w=1060" class="image1"/>
+      <p class="para1">Camera</p>
+      <div class="amount">
+      <span class="currency">$</span>
+      <span class="price" id="numid">38</span>
+      <span class="duration" id="monid">/mo</span>
+      </div>
+      <p class="para">22.3 x 14.9mm Image Size</p>
+      <p class="para">475g Weight</p>
+      <p class="para">DSLR Type</p>
+      <p class="para">Full HD Quality</p>
+      <button class="btn">Buy</button>
+    </div>
+  </div>
+
+  
+  <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+    <div class="container4">
+      <img src="https://img.freepik.com/premium-photo/black-tv-flat-screen-isolated-realistic-illustration-tv-screen-mockup-stand_87790-1064.jpg?w=1060" class="image1"/>
+      <p class="para1">TV</p>
+      <div class="amount">
+      <span class="currency">$</span>
+      <span class="price" id="numid">30</span>
+      <span class="duration" id="monid">/mo</span>
+      </div>
+      <p class="para">HD Ready 1366 x 768Px</p>
+      <p class="para">20W Sound Output</p>
+      <p class="para">50Hz Refresh Rate</p>
+      <p class="para">42 Inch Size</p>
+      <button class="btn">Buy</button>
+      </div>
+      </div>
+
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+
+    <script>
+      let priceToggler=document.querySelector('.price-toggler');
+      let price=document.querySelectorAll('.price');
+      let duration=document.querySelectorAll('.duration');
+
+      priceToggler.onclick=()=>{
+        priceToggler.classList.toggle('active');
+
+        if(priceToggler.classList.contains('active')){
+
+          for(var i=0;i<duration.length;i++){
+            duration[i].innerText='/yr';
+          }
+          for(var k=0;k<price.length;k++){
+            price[k].innerText=price[k].innerText * 10;
+          }
+        }else{
+          for(var j=0;j<duration.length;j++){
+            duration[j].innerText='/mo';
+          }
+          for(var l=0;l<price.length;l++){
+            price[l].innerText=price[l].innerText / 10;
+          }
+
+        }
+      }
+    </script>
+</body>
+</html>
